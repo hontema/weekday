@@ -1,0 +1,33 @@
+String yearmonth = "2023-3-";
+int date = 19; //beware entering 22>28, 23>29, 24>30, 25>31
+String day = "";
+
+println(yearmonth + date + " " + yearmonth + (date+6));
+
+for (int i = 0; i<7; i++) {
+  switch (i) {
+  case 0:
+    day = "sun";
+    break;
+  case 1:
+    day = "mon";
+    break;
+  case 2:
+    day = "tues";
+    break;
+  case 3:
+    day = "wednes";
+    break;
+  case 4:
+    day = "thurs";
+    break;
+  case 5:
+    day = "fri";
+    break;
+  case 6:
+    day = "satur";
+    break;
+  }
+
+  println(yearmonth + (date+i) + " " + day + "day");
+}
