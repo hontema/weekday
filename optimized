@@ -1,0 +1,8 @@
+String yearmonth = "2023-3-";
+int date = 19; //beware entering 22>28, 23>29, 24>30, 25>31
+String days[] = {"sun", "mon", "tues", "wednes", "thurs", "fri", "satur"};
+println(yearmonth + date + " " + yearmonth + (date+6));
+
+for (int i = 0; i<7; i++) {
+  println(yearmonth + (date+i) + " " + days[i] + "day");
+}
